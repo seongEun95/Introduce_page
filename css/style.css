@@ -1,0 +1,355 @@
+@charset "utf-8";
+@import url(./reset.css); /* reset.css 파일을 불러오기 */
+
+/* 
+  * 컬러 변수 정보
+  --dark-color: #483434; 다크 브라운 색상
+  --normal-color: #6b4f4f; 브라운 색상
+  --regular-color: #eed6c4; 베이지 색상
+  --light-color: #fff3e4; 밝은 베이지 색상
+*/
+
+/* 
+  * z-index 수치
+  #skip a : 400 
+  #header : 200
+  .top_btn a : 300
+*/
+
+/* css 공통 container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.container .item {
+  flex: 1;
+  padding: 3rem 0;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+/* 본문 바로가기 */
+#skip {
+  position: relative;
+}
+
+#skip a {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 3rem;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  z-index: 400;
+}
+
+#skip a:active,
+#skip a:focus {
+  top: 0;
+}
+
+/* header 시작 */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--light-color);
+  border: 1px solid var(--dark-color);
+  z-index: 200;
+}
+
+#header .container {
+  height: 6rem;
+}
+
+/* 메뉴 스타일 */
+#header nav {
+  height: 100%;
+}
+
+#header nav a {
+  display: inline-block;
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 6rem;
+  color: var(--dark-color);
+  padding: 0 2rem;
+}
+
+#header nav a:hover {
+  color: var(--regular-color);
+  background: var(--dark-color);
+}
+/* header 끝 */
+
+/* main 시작 */
+/* main 공통 속성 */
+#main section {
+  padding: 10rem 0;
+}
+
+#main section:nth-child(2n + 1) {
+  color: var(--light-color);
+  background: var(--dark-color);
+}
+
+#main section:nth-child(2n) {
+  color: var(--dark-color);
+  background: var(--light-color);
+}
+
+#main section h2 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#main section h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#main section .sub_title {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+#main section p {
+  font-size: 1.4rem;
+}
+
+#main section:nth-child(2n + 1) .item {
+  border: 1px solid var(--light-color);
+}
+
+#main section:nth-child(2n) .item {
+  border: 1px solid var(--dark-color);
+}
+
+/* main 타이틀 */
+#main .title {
+  position: relative;
+  width: 100%;
+  height: 85rem;
+  background-image: url("/img/header_img.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#main .title span {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--regular-color);
+}
+
+/* 테이블 스타일 */
+#main table {
+  width: 100%;
+}
+
+#main table thead tr th,
+#main table tbody tr td {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  border: 1px solid var(--dark-color);
+}
+
+/* section intro 부문 */
+#intro .photo {
+  flex: 1 0 45%;
+}
+
+#intro .photo img {
+  width: 100%;
+  max-width: 420px;
+}
+
+#intro .info {
+  flex: 1 0 55%;
+}
+
+/* section work 부문 */
+#works {
+  text-align: center;
+}
+
+#works .item img {
+  border-radius: 1rem;
+}
+
+#works .item a {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-top: 1.6rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--light-color);
+  border-radius: 0.5rem;
+}
+
+#works .item a:hover {
+  color: var(--dark-color);
+  background: var(--light-color);
+}
+
+/* section skills 부문 */
+#skills {
+  text-align: center;
+}
+
+/* section tolls 부문 */
+#tools {
+  text-align: center;
+}
+/* main 끝 */
+
+/* footer 시작 */
+#footer {
+  text-align: center;
+  padding: 5rem 0;
+  color: var(--light-color);
+  background: var(--dark-color);
+}
+
+#footer .sns {
+  display: flex;
+  justify-content: center;
+}
+
+#footer .sns li a {
+  font-size: 1.4rem;
+  display: inline-block;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+#footer .copyright {
+  font-size: 1.6rem;
+}
+/* footer 끝 */
+
+/* top 버튼 */
+.top_btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.top_btn a {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1rem;
+  line-height: 4rem;
+  text-align: center;
+  color: var(--light-color);
+  background: var(--dark-color);
+  border: 1px solid var(--light-color);
+  border-radius: 100%;
+  z-index: 300;
+}
+
+/* 반응형 1199px 이하 적용 */
+@media screen and (max-width: 1199px) {
+  html,
+  body {
+    font-size: 9px;
+  }
+
+  #intro .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #intro .photo {
+    flex: 1 0 100%;
+  }
+
+  #intro .info {
+    flex: 1 0 100%;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+  }
+}
+
+/* 반응형 991px 이하 적용 */
+@media screen and (max-width: 991px) {
+  #header nav a {
+    padding: 0 1rem;
+  }
+  #works .container,
+  #skills .container,
+  #tools .container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  #works .container .item,
+  #skills .container .item,
+  #tools .container .item {
+    flex: 1 0 calc(50% - 10px);
+  }
+}
+
+/* 반응형 576px 이하 적용 */
+@media screen and (max-width: 576px) {
+  #header .container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0 0;
+    gap: 0;
+  }
+
+  #header nav a {
+    font-size: 1.4rem;
+  }
+
+  #main section {
+    padding: 5rem 0;
+  }
+  #main section h2 {
+    font-size: 3rem;
+  }
+  #main .title {
+    height: 60rem;
+  }
+  #main section .sub_title {
+    margin-bottom: 5rem;
+  }
+  #main .title span strong {
+    display: block;
+  }
+
+  #works .container .item,
+  #skills .container .item,
+  #tools .container .item {
+    flex: 1 0 100%;
+  }
+}
+
+/* 반응형 320px 이하 적용 */
+@media screen and (max-width: 320px) {
+  #header nav a {
+    padding: 0 0.5rem;
+  }
+}

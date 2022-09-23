@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keyword" content="introduction, information, homepage, portfolio, 포트폴리오"><!-- 검색엔진 키워드 -->
+  <meta name="description" content="저를 소개하는 원페이지 형식의 홈페이지 입니다."><!-- 웹 페이지 설명 -->
+  <meta name="author" content="Kim seong eun"><!-- 웹 페이지 작성자 -->
+  <meta name="Date" content="2022-09-23T16:10:37+09:00" /><!-- 웹 페이지 제작일 -->
+  <title>나의 소개 페이지</title>
+
+  <!-- favicon : 홈페이지 타이틀 옆 이미지 지정 / 파비콘 생성 사이트 : https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicon 영역 끝 -->
+
+  <!-- open graph : SNS 웹사이트 공유 시 제목, 설명, 이미지 표시 -->
+  <meta property="og:title" content="나의 소개 페이지" />
+  <meta property="og:description" content="저를 소개하는 원페이지 형식의 홈페이지 입니다.">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://" />
+  <meta property="og:image" content="/img/opengraph.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <!-- open graph 영역 끝 -->
+
+  <!-- css 연결 -->
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body id="body">
+  <!-- 본문 내용 바로가기 -->
+  <div id="skip">
+    <a href="#main">본문 내용 바로가기</a>
+  </div>
+
+  <!-- header 시작 -->
+  <header id="header">
+    <div class="container">
+      <!-- 로고영역 -->
+      <div id="logo">
+        <h1>
+          <a href="/index.html" title="나의 소개 페이지로 이동">
+            <img src="./img/logo.png" alt="WEB로고">
+          </a>
+        </h1>
+      </div>
+
+      <!-- 메뉴 영역 -->
+      <nav>
+        <a href="#intro">About me</a>
+        <a href="#works">Works</a>
+        <a href="#skills">skills</a>
+        <a href="#tools">tools</a>
+        <a href="#licenses">licenses</a>
+      </nav>
+    </div>
+  </header>
+  <!-- header 끝 -->
+
+  <!-- main 시작 -->
+  <main id="main">
+    <!-- 시작 타이틀 -->
+    <h2 class="title">
+      <span>
+        안녕하세요, <strong>웹 퍼블리셔</strong> 김성은 입니다.</span>
+    </h2>
+    <!-- intro 부문 -->
+    <section id="intro">
+      <h2>About me</h2>
+      <div class="container">
+        <!-- 소개 이미지 -->
+        <div class="photo">
+          <img src="/img/my_photo.png" alt="노트북으로 작업을 하고 있는 나의 모습">
+        </div>
+        <div class="info">
+          <div class="introduce">
+            <h3>인사말</h3>
+            <p>
+              안녕하세요, 웹 에이전시에서 퍼블리셔로 근무 중인 김성은입니다.
+              <br>
+              저는 진로를 찾는 과정에서 우리가 항상 사용하고있는 웹을 만드는 기술에 흥미를 느끼게 되었습니다.
+              <br>
+              웹의 분야 중 바로 결과물을 확인할 수 있는 프론트엔드 개발을 준비하고 있습니다.
+              <br>
+              아직은 부족할 수 있으나 매일 한 걸음씩 나아간다면 목표에 도착할 것이라 믿고 있습니다.
+            </p>
+          </div>
+          <div class="career_education">
+            <!-- 경력사항 -->
+            <h3>경력</h3>
+            <table>
+              <caption>경력사항 표</caption>
+              <thead>
+                <tr>
+                  <th scope="col">기간</th>
+                  <th scope="col">기업명</th>
+                  <th scope="col">업종</th>
+                  <th scope="col">업무내용</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2021.08.02 ~ 현재</td>
+                  <td>ㅇㅇ미디어</td>
+                  <td>웹 에이전시</td>
+                  <td>퍼블리싱, 개발 일정 조율 및 요구사항 문서 작성, 개발 검수</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- 교육사항 -->
+            <h3>교육</h3>
+            <table>
+              <caption>교육사항 표</caption>
+              <thead>
+                <tr>
+                  <th scope="col">기간</th>
+                  <th scope="col">기관명</th>
+                  <th scope="col">교육명</th>
+                  <th scope="col">교육내용</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2022. 09 ~ 현재</td>
+                  <td>개발자의 품격</td>
+                  <td>세상에서 가장 느슨한 웹 개발자 양성 부트캠프</td>
+                  <td>프론트엔드 & 벡엔드 개발</td>
+                </tr>
+                <tr>
+                  <td>2021. 01 ~ 2021. 06</td>
+                  <td>ㅇㅇ컴퓨터학원</td>
+                  <td>반응형 웹디자인 & 웹퍼블리셔 양성과정</td>
+                  <td>웹 디자인 및 웹 표준 실무 제작</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- works 부문 -->
+    <section id="works">
+      <h2>Works</h2>
+      <p class="sub_title">개인 퍼블리싱 작업물 입니다.</p>
+      <div class="container">
+        <!-- 작업물 01 -->
+        <div class="item">
+          <img src="./img/works01.jpg" alt="인천광역시 홈페이지 썸네일 이미지">
+          <!-- 작업물 - 타이틀 -->
+          <h3>인천광역시</h3>
+          <p>
+            고정형 / pc <br>
+            메인페이지 & 서브페이지(5) <br>
+            html, css, jquery<br>
+          </p>
+          <a target="_blank" title="새 창, 인천광역시 홈페이지로 이동"
+            href="http://dsa02070.cafe24.com/%ec%9d%b8%ec%b2%9c%ea%b4%91%ec%97%ad%ec%8b%9c/">사이트 이동</a>
+        </div>
+
+        <!-- 작업물 02 -->
+        <div class="item">
+          <img src="./img/works02.jpg" alt="나이키 홈페이지 썸네일 이미지">
+          <!-- 작업물 - 타이틀 -->
+          <h3>나이키</h3>
+          <p>
+            반응형 / pc - tablet - mobile <br>
+            메인페이지 & 서브페이지(7) <br>
+            html, css, jquery<br>
+          </p>
+          <a target="_blank" title="새 창, 나이키 홈페이지로 이동"
+            href="http://dsa02070.cafe24.com/%eb%82%98%ec%9d%b4%ed%82%a4/">사이트
+            이동</a>
+        </div>
+
+        <!-- 작업물 03 -->
+        <div class="item">
+          <img src="./img/works03.jpg" alt="키아프 아트 서울 홈페이지 썸네일 이미지">
+          <!-- 작업물 - 타이틀 -->
+          <h3>키아프 아트 서울</h3>
+          <p>
+            반응형 / pc - tablet - mobile <br>
+            메인페이지 & 서브페이지(8) <br>
+            html, css<br>
+          </p>
+          <a target="_blank" title="새 창, 키아프 아트 서울 홈페이지로 이동"
+            href="http://dsa02070.cafe24.com/%ec%9d%b8%ec%b2%9c%ea%b4%91%ec%97%ad%ec%8b%9c/">사이트 이동</a>
+        </div>
+
+        <!-- 작업물 04 -->
+        <div class="item">
+          <img src="./img/works04.jpg" alt="카카오페이증권 홈페이지 썸네일 이미지">
+          <!-- 작업물 - 타이틀 -->
+          <h3>카카오페이증권</h3>
+          <p>
+            반응형 / pc - tablet - mobile <br>
+            메인페이지 & 서브페이지(4) <br>
+            html, css, jquery<br>
+          </p>
+          <a target="_blank" title="새 창, 카카오페이증권 홈페이지로 이동"
+            href="http://dsa02070.cafe24.com/%ec%b9%b4%ec%b9%b4%ec%98%a4%ed%8e%98%ec%9d%b4%20%ec%a6%9d%ea%b6%8c/index.html">사이트
+            이동</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill 부문 -->
+    <section id="skills">
+      <h2>skills</h2>
+      <p class="sub_title">사용하는 언어 입니다.</p>
+      <div class="container">
+
+        <!-- 스킬 01 -->
+        <div class="item">
+          <img src="/img/html.png" alt="html 이미지">
+          <h3>HTML</h3>
+          <p>시멘틱 구조와 접근성을 고려하여 <br> 태그를 작성할 수 있습니다.</p>
+        </div>
+
+        <!-- 스킬 02 -->
+        <div class="item">
+          <img src="/img/css.png" alt="css 이미지">
+          <h3>CSS</h3>
+          <p>HTML 구조를 꾸밀 수 있으며 <br> 반응형 웹을 사용할 수 있습니다.</p>
+        </div>
+
+        <!-- 스킬 03 -->
+        <div class="item">
+          <img src="/img/javascript.png" alt="javascript 이미지">
+          <h3>javascript</h3>
+          <p>배우기 전 입니다. <br> 추후 작성 예정입니다.</p>
+        </div>
+
+        <!-- 스킬 04 -->
+        <div class="item">
+          <img src="/img/vue.png" alt="vue js 이미지">
+          <h3>vue</h3>
+          <p>배우기 전 입니다. <br> 추후 작성 예정입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- tool 부문 -->
+    <section id="tools">
+      <h2>tools</h2>
+      <p class="sub_title">언어외에 사용할 수 있는 도구 입니다.</p>
+      <div class="container">
+
+        <!-- tool 01 -->
+        <div class="item">
+          <img src="/img/git.png" alt="깃허브 아이콘">
+          <h3>깃&깃허브</h3>
+          <p>깃 명령어를 익히고 있으며 <br> 깃허브 플랫폼에 업로드할 수 있습니다.</p>
+        </div>
+
+        <!-- tool 02 -->
+        <div class="item">
+          <img src="/img/photoshop.png" alt="포토샵 아이콘">
+          <h3>포토샵</h3>
+          <p>사진 보정 및 썸네일 제작을 했으며 <br> 디자이너와 협업 시 사용했습니다.</p>
+        </div>
+
+        <!-- tool 03 -->
+        <div class="item">
+          <img src="/img/premiere.png" alt="프리미어프로 아이콘">
+          <h3>프리미어프로</h3>
+          <p>컷 편집 및 자막 작업으로 <br> 유튜브 영상 편집 경험이 있습니다.</p>
+        </div>
+
+        <!-- tool 04 -->
+        <div class="item">
+          <img src="/img/xd.png" alt="어도비xd 아이콘">
+          <h3>어도비XD</h3>
+          <p>프로토타이핑을 이용해 <br> 벡엔드 개발자와 협업한 경험이 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- license 부문 -->
+    <section id="licenses">
+      <h2>licenses</h2>
+      <p class="sub_title">취득한 자격증 목록 입니다.</p>
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">순번</th>
+              <th scope="col">자격증</th>
+              <th scope="col">발급기관</th>
+              <th scope="col">취득년월</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>컴퓨터그래픽스운용기능사</td>
+              <td>한국산업인력공단</td>
+              <td>2021. 05</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>웹디자인기능사</td>
+              <td>한국산업인력공단</td>
+              <td>2020. 08</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>GTQ 포토샵 1급</td>
+              <td>한국생산성본부</td>
+              <td>2018. 01</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>GTQ 일러스트 1급</td>
+              <td>한국생산성본부</td>
+              <td>2021. 02</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>사무자동화산업기사</td>
+              <td>한국산업인력공단</td>
+              <td>2021. 12</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>컴퓨터활용능력 2급</td>
+              <td>대한상공회의소</td>
+              <td>2020. 07</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <!-- main 끝 -->
+
+  <!-- footer 시작 -->
+  <footer id="footer">
+    <ul class="sns">
+      <li><a target="_blank" title="새 창, 깃허브로 이동" href="https://github.com/seongEun95"><img src="/img/github.png"
+            alt="깃허브 아이콘"></a></li>
+      <li><a target="_blank" title="새 창, 블로그로 이동" href="https://express.tistory.com/"><img src="/img/blog.png"
+            alt="블로그 아이콘"></a></li>
+    </ul>
+    <p class="copyright">copyright ⓒ kim seong eum. All Rights Reserved.</p>
+  </footer>
+  <!-- footer 끝 -->
+
+  <!-- top 버튼 -->
+  <div class="top_btn">
+    <a href="#body">TOP</a>
+  </div>
+</body>
+
+</html>
